@@ -1,0 +1,60 @@
+.personas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.persona {
+    width: 40%;
+    height: 40vh;
+    margin: 20px;
+}
+
+.fotos {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.foto01 {
+    background-image: url('../../../../public/images/jefe.jpg');
+}
+
+.foto02 {
+    background-image: url('../../../../public/images/cocinera.jpg');
+}
+
+.foto03 {
+    background-image: url('../../../../public/images/mozo.jpg');
+}
+
+.foto04 {
+    background-image: url('../../../../public/images/tecnico.jpg');
+}
+
+.presentacion {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    width: 90%;
+    height:min-content;
+    margin: 10px;
+}
+
+.presentacion h4 {
+    font-size: 1rem;
+    text-decoration: solid;
+    margin: 5px;
+}
+
+.presentacion p {
+    font-size: 0.75rem;
+    margin: 5px;
+}

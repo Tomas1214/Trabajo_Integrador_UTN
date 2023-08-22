@@ -1,0 +1,35 @@
+<div class="container" style="margin: 100px 0">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>Modificar la pedido</h4>
+            <form action="/admin/pedidos/modificar" method="post" enctype="multipart/form-data">
+                <input type="hidden" value="{{pedido.id}}" name="id">
+                <div class="mb-3 row">
+                    <label for="">Orden</label>
+                    <input type="text" class="form-control" name="orden" value="{{pedido.orden}}">
+                </div>
+                <div class="mb-3 row">
+                    <p>
+                        <label>Repartidor: <input type="file" class="form-control" name="repartidor" id="repartidor" /></label>
+                    </p>
+                    <p>
+                        <label><input type="checkbox" name="img_delete" id="img_delete" value="1">Sacar al repartidor actual?</label>
+                        <input type="hidden" name="img_original" value="{{pedido.img_id}}">
+                    </p>
+                </div>
+                <div class="mb-3 row">
+                    <label for="">Cuerpo</label>
+                    <textarea class="form-control" name="cuerpo">{{pedido.cuerpo}}</textarea>
+                </div>
+                <div class="mb-3 row">
+                    <label for="">Horario</label>
+                    <input type="text" class="form-control" name="horario" value="{{pedido.horario}}">
+                </div>
+                <button type="submit" class="btn btn-primary">Modificar</button>
+            </form>
+            {{#if error}}
+                <h5>{{message}}</h5>
+            {{/if}}
+        </div>
+    </div>
+</div>

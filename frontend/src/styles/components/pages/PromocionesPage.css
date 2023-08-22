@@ -1,0 +1,30 @@
+.imagenes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagenes > div {
+    width: 40%;
+    margin: 0px 10px;
+}
+
+.promos .imagen {
+    height: 300px;
+    width: 100%;
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+}
+
+.promo01 {
+    background-image: url('../../../../public/images/promociones01.jpg');
+}
+
+.promo02 {
+    background-image: url('../../../../public/images/teyalfajores.jpg');
+}
+
+.promo03 {
+    background-image: url('../../../../public/images/jugodenaranjaycroissants.jpg');
+}

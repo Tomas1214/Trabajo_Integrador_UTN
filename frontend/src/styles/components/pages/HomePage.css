@@ -1,0 +1,70 @@
+.imagen {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+section .home-menu, section .home-promociones {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    border: 5px solid white;
+    border-radius: 50px;
+}
+
+.home-menu {
+    background-image: url('../../../../public/images/menu01.jpg');
+}
+
+.home-promociones {
+    background-image: url('../../../../public/images/promociones01.jpg');
+}
+
+section a {
+    border-radius: 10px;
+    padding: 1px 5px;
+    color: white;
+    text-decoration-line: none;
+}
+
+.ver {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    font-size: 2rem;
+    position: relative;
+    top: 75%;
+    left: 75%
+}
+
+.saber-mas {
+    background-color: gray;
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sub-container {
+    width: 25%;
+    min-width: 400px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: small;
+    padding: 15px;
+    background-color: peru;
+}
+
+.sub-container h2 {
+    font-size: 1.5rem;
+}
+
+.sub-container p {
+    font-size: 0.9rem;
+}
+
+

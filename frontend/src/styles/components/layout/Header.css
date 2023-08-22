@@ -1,0 +1,18 @@
+header {
+    padding-left: 20%;
+    display: flex;
+    align-items: center;
+    background-color: peru;
+}
+
+header h1 {
+    font-family: cursive;
+    font-size: 3rem;
+    margin: 0.25em;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+    border-radius: 10px;
+}

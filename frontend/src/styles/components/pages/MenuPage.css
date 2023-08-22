@@ -1,0 +1,52 @@
+.menu {
+    border: 5px double black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagenes > div {
+    width: 20%;
+    margin: 0px 10px;
+}
+
+.menu .imagen {
+    height: 200px;
+    width: auto;
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+}
+
+.bebida01 {
+    background-image: url('../../../../public/images/menu01.jpg');
+}
+
+.bebida02 {
+    background-image: url('../../../../public/images/te.jpg');
+}
+
+.bebida03 {
+    background-image: url('../../../../public/images/milkshake.jpg');
+}
+
+.bebida04 {
+    background-image: url('../../../../public/images/jugodenaranja.jpg');
+}
+
+.comida01 {
+    background-image: url('../../../../public/images/croissants.jpg');
+}
+
+.comida02 {
+    background-image: url('../../../../public/images/snacks.jpg');
+}
+
+.comida03 {
+    background-image: url('../../../../public/images/sandwiches.jpg');
+}

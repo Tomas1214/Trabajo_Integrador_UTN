@@ -1,0 +1,25 @@
+<div class="container" style="margin: 100px auto">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>Agregar un pedido</h4>
+            <form action="/admin/pedidos/agregar" method="post" enctype="multipart/form-data">
+                <div class="mb-3 row">
+                    <input type="text" class="form-control" placeholder="Título" name="orden">
+                </div>
+                <div class="mb-3 row">
+                    <label>Repartidor: <input type="file" class="form-control" name="repartidor" id="repartidor" /></label>
+                </div>
+                <div class="mb-3 row">
+                    <textarea type="text" class="form-control" placeholder="Cuerpo" name="cuerpo"></textarea>
+                </div>
+                <div class="mb-3 row">
+                    <input type="text" class="form-control" placeholder="Horario" name="horario">
+                </div>
+                <button typle="submit" class="btn btn-primary">Guardar</button>
+            </form>
+            {{#if error}}
+                <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>
