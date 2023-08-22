@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 17-08-2023 a las 17:38:46
+-- Tiempo de generación: 22-08-2023 a las 19:42:16
 -- Versión del servidor: 8.0.31
 -- Versión de PHP: 8.0.26
 
@@ -57,17 +57,19 @@ CREATE TABLE IF NOT EXISTS `pedidos` (
   `orden` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
   `cuerpo` varchar(250) COLLATE utf8mb4_general_ci NOT NULL,
   `horario` varchar(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `img_id` varchar(250) COLLATE utf8mb4_general_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `pedidos`
 --
 
-INSERT INTO `pedidos` (`id`, `orden`, `cuerpo`, `horario`) VALUES
-(1, 'Orden de la familia Garcea', '1 café con leche con 2 medialunas.', '18:00'),
-(2, 'Orden modificada', '1 medialuna extra.', '18:30'),
-(3, 'Orden nueva', 'Alfajor de chocolate', '19:00');
+INSERT INTO `pedidos` (`id`, `orden`, `cuerpo`, `horario`, `img_id`) VALUES
+(1, 'Orden de la familia Garcea', '1 café con leche con 2 medialunas.', '18:00', NULL),
+(2, 'Orden modificada', '1 medialuna extra.', '18:30', NULL),
+(3, 'Orden nueva', 'Alfajor de chocolate', '19:00', NULL),
+(7, 'Pedido nuevo', 'Un salamín con pelo', '14:00', 'hwem43oov7u6ellzyzj1');
 
 -- --------------------------------------------------------
 
