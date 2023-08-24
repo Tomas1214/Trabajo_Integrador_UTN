@@ -1,5 +1,6 @@
 body {
     background-color: burlywood;
+    overflow-x: hidden;
 }
 
 section {
