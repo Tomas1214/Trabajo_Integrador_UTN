@@ -5,7 +5,7 @@ const PedidoItem = (props) => {
 
     return (
         <div className="pedidos">
-            <h1>{order}</h1>
+            <h3>{order}</h3>
             <img src={repartidor} />
             <div dangerouslySetInnerHTML={{__html: body}} />
             <div dangerouslySetInnerHTML={{__html: hour}} />

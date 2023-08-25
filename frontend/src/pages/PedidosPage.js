@@ -19,14 +19,16 @@ const PedidosPage = (props) => {
     return (
         <section className="wider">
             <h2>Órdenes</h2>
-            {
-                loading ? (
-                <p>Cargando...</p>
-            ) : (
-                pedidos.map(item => <PedidoItem key={item.id}
-                    order={item.orden} repartidor={item.repartidor} body={item.cuerpo} hour={item.horario} />)
-                )
-            }
+                <div className="menu">
+                    {
+                        loading ? (
+                        <p>Cargando...</p>
+                    ) : (
+                        pedidos.map(item => <PedidoItem key={item.id}
+                            order={item.orden} repartidor={item.repartidor} body={item.cuerpo} hour={item.horario} />)
+                        )
+                    }
+                </div>
         </section>
     )
 };

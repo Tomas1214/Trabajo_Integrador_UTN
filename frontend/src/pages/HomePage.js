@@ -16,7 +16,7 @@ const HomePage = (props) => {
                 <h1>Promociones</h1>
                 <p>Ofertas exclusivas para que tengas la <b>mejor experiencia</b> al <b>mejor precio</b></p>
                 <div className="home-promociones">
-                <Link to="/menu" className="ver">Ver</Link>
+                <Link to="/promociones" className="ver">Ver</Link>
                 </div>
             </section>
             <section className="flex">
@@ -33,7 +33,7 @@ const HomePage = (props) => {
                 <div className="sub-container">
                     <h2>Pedidos online</h2>
                     <p>¡Hacé tu pedido desde tu casa!</p>
-                    <Link to="/contacto" className="saber-mas">Saber más</Link>
+                    <Link to="/pedidos" className="saber-mas">Saber más</Link>
                 </div>
             </section>
         </main>
